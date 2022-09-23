@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.div-imagem-hotel{
+    width: 280px;
+    height: 280px;
+    border-radius: 1rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.info-lista{
+    padding: 1rem;
+    list-style: none;
+}

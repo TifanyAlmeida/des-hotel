@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'headerHome.html' %}
+    <body>
+        {% include 'menu.html' %}
+
+        {% if user.is_authenticated %}
+          <div class="">
+            
+          </div>
+
+              <div class="grid-container">
+                {% for h in hospedagem %}   
+                <div class="grid-item">
+                  <a href="{% url 'detalhes' h.id %}">
+                    <div class="div-imagem-hotel" style="background: url({{h.imagem_1.url}}); background-size: cover;"></div>  
+                    <ul class="info-lista">
+                      <li class="info-titulo"><b>{{h.titulo}}</b></li>
+                      <li class="info-hotel">{{h.disponibilidade_a_partir}}</li>
+                      <li class="info-hotel">País: {{h.endereco}}</li>
+                    </ul> 
+                  </a>
+                </div>
+            
+            {% endfor %}
+            </div>
+
+        {% else %}
+        {% endif %}
+
+    </body>
+</html>

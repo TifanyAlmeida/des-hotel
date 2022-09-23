@@ -1,0 +1,78 @@
+*{   
+    font-family: 'Poppins', sans-serif;
+}
+.imagem-centro{
+    display: flex;
+    justify-content: center;
+}
+.imagem-quadro-externo{
+    width: max-content;
+}
+.imagem-quadro{
+    display: flex;
+    height: 570px;
+}
+.imagem-hotel-grande{
+    width: 500px;
+    height: 570px;
+    border-radius: 1rem 0rem 0rem 1rem;
+    margin-right: 0.5rem;
+}
+.imagem-hotel-esquerda{
+    width: 280px;
+    height: 280px;
+}
+.imagem-vertical-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imagem-hotel-direita{
+    width: 280px;
+    height: 280px;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+.imagem-vertical-direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+}
+
+
+/**/
+
+.hotel-infos{
+    display: flex;
+}
+
+.hospedador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    width: max-content;
+    border: 1px solid red;
+}
+.hospedador-sobre{/*apagar a direita*/
+    width: 50%;
+}
+.hospedador-foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.direita{
+    border: 2px solid rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao-reserva{
+    background-color:rgb(0 208 255);
+    border:none;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 2rem;
+}

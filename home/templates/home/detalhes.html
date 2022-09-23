@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'headerDetalhe.html' %}
+    <body>
+        {% include 'menu.html' %}
+
+        {% if user.is_authenticated %}
+        <div class="imagem-centro">
+            <div class="imagem-quadro-externo">
+                <h2>{{detalhes.titulo}}</h2>
+                <div class="imagem-quadro">
+                    <div>
+                        <div class="imagem-hotel-grande" style="background: url({{detalhes.imagem_1.url}}); background-size: cover;"></div>
+                    </div>
+
+                    <div class="imagem-vertical-esquerda">
+                        <div class="imagem-hotel-esquerda" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
+                        <div class="imagem-hotel-esquerda" style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
+                        
+                    </div>
+                    <div class="imagem-vertical-direita">
+                        <div class="imagem-hotel-direita" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
+                        <div class="imagem-hotel-direita" style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
+                    </div>
+                </div>
+                
+                <div class="hotel-infos">
+                    
+                    <div class="hospedador">
+                        <div class="hospedador-sobre">
+                            <h3><b>Hospedador@ Tifany</b></h3>
+                            <p>Olá, eu sou a Tifany e possuo diversos imóveis para hospedagem aqui na 'des' que podem te interessar.</p>
+                        </div>
+                            
+                        <div class="hospedador-foto" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;">
+                        </div>
+
+                        <div class="direita">
+                            <h3>R$ 1869/noite</h3>
+                            <button class="botao-reserva">Reservar</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        {% else %}
+        {% endif %}
+
+    </body>
+</html>
