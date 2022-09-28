@@ -1,25 +1,30 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
-    margin: 0rem 10rem 0rem 10rem;
+    margin: 2rem 10rem;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.nav-titulo{
+
+.nav-titulo {
     font-size: 30px;
     font-weight: 800;
-    color:rgb(0 208 255);
+    color: rgb(0 208 255);
 }
-.nav-lista{
+
+.nav-lista {
     display: flex;
     list-style: none;
     align-items: center;
 }
-#nav-texto{
+
+#nav-texto {
     font-size: 20px;
     color: rgb(161, 161, 161);
     letter-spacing: 2px;

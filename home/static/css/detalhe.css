@@ -1,77 +1,91 @@
-*{   
+* {
     font-family: 'Poppins', sans-serif;
 }
-.imagem-centro{
+
+.imagem-centro {
     display: flex;
     justify-content: center;
 }
-.imagem-quadro-externo{
+
+.imagem-quadro-externo {
     width: max-content;
+    border-bottom: 2px solid rgb(236, 236, 236);
 }
-.imagem-quadro{
+
+.imagem-quadro {
     display: flex;
     height: 570px;
 }
-.imagem-hotel-grande{
+
+.imagem-hotel-grande {
     width: 500px;
     height: 570px;
     border-radius: 1rem 0rem 0rem 1rem;
     margin-right: 0.5rem;
 }
-.imagem-hotel-esquerda{
+
+.imagem-hotel-esquerda {
     width: 280px;
     height: 280px;
 }
-.imagem-vertical-esquerda{
+
+.imagem-vertical-esquerda {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.imagem-hotel-direita{
+
+.imagem-hotel-direita {
     width: 280px;
     height: 280px;
     border-radius: 0rem 1rem 1rem 0rem;
 }
-.imagem-vertical-direita{
+
+.imagem-vertical-direita {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 0.5rem;
 }
 
-
 /**/
 
-.hotel-infos{
+.preco-hotel-centro {
     display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 2rem;
 }
 
-.hospedador{
+.hospedador {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(216, 216, 216);
-    width: max-content;
-    border: 1px solid red;
+    border-bottom: 2px solid rgb(236, 236, 236);
 }
-.hospedador-sobre{/*apagar a direita*/
-    width: 50%;
+
+.hospedador-sobre {
+    width: 40%;
 }
-.hospedador-foto{
+
+.hospedador-foto {
     width: 90px;
     height: 90px;
     border-radius: 50%;
 }
 
-.direita{
-    border: 2px solid rgb(216, 216, 216);
+.preco-hotel {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+    width: max-content;
+    padding: 2rem;
 }
-.botao-reserva{
-    background-color:rgb(0 208 255);
-    border:none;
+
+.botao-reserva {
+    background-color: rgb(0 208 255);
+    border: none;
     font-size: 20px;
     padding: 5px 30px;
     border-radius: 2rem;

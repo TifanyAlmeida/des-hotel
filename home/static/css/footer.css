@@ -1,0 +1,17 @@
+footer {
+    margin-top: 2rem;
+}
+
+.elementos-contato {
+    padding: 3rem 10rem;
+}
+
+.contato-footer {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.direitos-reservados {
+    background-color: rgb(0 208 255);
+    text-align: center;
+}

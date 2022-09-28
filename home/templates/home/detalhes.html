@@ -1,53 +1,86 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'headerDetalhe.html' %}
-    <body>
-        {% include 'menu.html' %}
+{% include 'headerDetalhe.html' %}
 
-        {% if user.is_authenticated %}
-        <div class="imagem-centro">
-            <div class="imagem-quadro-externo">
-                <h2>{{detalhes.titulo}}</h2>
-                <div class="imagem-quadro">
-                    <div>
-                        <div class="imagem-hotel-grande" style="background: url({{detalhes.imagem_1.url}}); background-size: cover;"></div>
-                    </div>
+<body>
+    {% include 'menu.html' %}
 
-                    <div class="imagem-vertical-esquerda">
-                        <div class="imagem-hotel-esquerda" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
-                        <div class="imagem-hotel-esquerda" style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
-                        
-                    </div>
-                    <div class="imagem-vertical-direita">
-                        <div class="imagem-hotel-direita" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
-                        <div class="imagem-hotel-direita" style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
-                    </div>
+    {% if user.is_authenticated %}
+    <div class="imagem-centro">
+        <div class="imagem-quadro-externo">
+            <h2>{{detalhes.titulo}}</h2>
+            <div class="imagem-quadro">
+                <div>
+                    <div class="imagem-hotel-grande"
+                        style="background: url({{detalhes.imagem_1.url}}); background-size: cover;"></div>
                 </div>
-                
-                <div class="hotel-infos">
-                    
-                    <div class="hospedador">
-                        <div class="hospedador-sobre">
-                            <h3><b>Hospedador@ Tifany</b></h3>
-                            <p>Olá, eu sou a Tifany e possuo diversos imóveis para hospedagem aqui na 'des' que podem te interessar.</p>
-                        </div>
-                            
-                        <div class="hospedador-foto" style="background: url({{detalhes.imagem_2.url}}); background-size: cover;">
-                        </div>
 
-                        <div class="direita">
-                            <h3>R$ 1869/noite</h3>
-                            <button class="botao-reserva">Reservar</button>
-                        </div>
-                    </div>
+                <div class="imagem-vertical-esquerda">
+                    <div class="imagem-hotel-esquerda"
+                        style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
+                    <div class="imagem-hotel-esquerda"
+                        style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
 
                 </div>
-                
+                <div class="imagem-vertical-direita">
+                    <div class="imagem-hotel-direita"
+                        style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
+                    <div class="imagem-hotel-direita"
+                        style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
+                </div>
             </div>
-        </div>
-        {% else %}
-        {% endif %}
 
-    </body>
+
+
+            <div class="hospedador">
+                <div class="hospedador-sobre">
+                    <h3><b>Hospedador@ Tifany</b></h3>
+                    <p>Olá, eu sou a Tifany e possuo diversos imóveis para hospedagem aqui na 'des' que podem te
+                        interessar.</p>
+                </div>
+
+                <div class="hospedador-foto"
+                    style="background: url({{detalhes.imagem_2.url}}); background-size: cover;">
+                </div>
+            </div>
+
+            <div class="preco-hotel-centro">
+                <div class="preco-hotel">
+                    <h2>R$ 1869/noite</h2>
+                    <p>Texa de Limpeza: R$ 90</p>
+                    <p>Taxa de Serviço: R$ 300</p>
+                    <button class="botao-reserva">Reservar</button>
+                </div>
+
+                <div>
+                    <h4>Vista</h4>
+                    <ul>
+                        <li>Vista para a praia</li>
+                        <li>Vista para a cidade</li>
+                    </ul>
+
+                    <h4>Internet e Escritório</h4>
+                    <ul>
+                        <li>Wifi</li>
+                    </ul>
+
+                    <h4>Banheiro</h4>
+                    <ul>
+                        <li>Shampoo e Condicionador</li>
+                        <li>Toalhas</li>
+                        <li>Secador</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% else %}
+    {% endif %}
+
+    {% include 'footer.html' %}
+
+</body>
+
 </html>
