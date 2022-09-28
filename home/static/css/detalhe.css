@@ -9,7 +9,7 @@
 
 .imagem-quadro-externo {
     width: max-content;
-    border-bottom: 2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(215 215 215);
 }
 
 .imagem-quadro {
@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(215 215 215)
 }
 
 .hospedador-sobre {
@@ -89,4 +89,9 @@
     font-size: 20px;
     padding: 5px 30px;
     border-radius: 2rem;
+}
+.botao-reserva:hover{
+    background-color: rgb(155, 231, 248);
+    transition: 1s ease-in-out;
+    cursor:pointer;
 }

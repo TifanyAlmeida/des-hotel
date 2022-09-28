@@ -17,6 +17,10 @@ a {
     font-weight: 800;
     color: rgb(0 208 255);
 }
+.nav-titulo:hover{
+    color:rgb(29, 182, 216);
+    transition: 1s ease-in;
+}
 
 .nav-lista {
     display: flex;
@@ -26,7 +30,11 @@ a {
 
 #nav-texto {
     font-size: 20px;
-    color: rgb(161, 161, 161);
+    color: rgb(133, 133, 133);
     letter-spacing: 2px;
     margin-left: 2rem;
+}
+#nav-texto:hover{
+    color: rgb(177, 177, 177);
+    transition: 1s;
 }

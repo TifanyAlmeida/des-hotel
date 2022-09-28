@@ -25,9 +25,9 @@
                 </div>
                 <div class="imagem-vertical-direita">
                     <div class="imagem-hotel-direita"
-                        style="background: url({{detalhes.imagem_2.url}}); background-size: cover;"></div>
+                        style="background: url({{detalhes.imagem_4.url}}); background-size: cover;"></div>
                     <div class="imagem-hotel-direita"
-                        style="background: url({{detalhes.imagem_3.url}}); background-size: cover;"></div>
+                        style="background: url({{detalhes.imagem_5.url}}); background-size: cover;"></div>
                 </div>
             </div>
 
@@ -35,42 +35,31 @@
 
             <div class="hospedador">
                 <div class="hospedador-sobre">
-                    <h3><b>Hospedador@ Tifany</b></h3>
-                    <p>Olá, eu sou a Tifany e possuo diversos imóveis para hospedagem aqui na 'des' que podem te
-                        interessar.</p>
+                    <h3><b>Hospedador@ {{detalhes_hosped.nome}}</b></h3>
+                    <p>{{detalhes_hosped.sobre}}</p>
+                    <p><i class="fa fa-envelope-o" style="font-size:24px" style="display:flex;"></i> {{detalhes_hosped.email}}</p>
                 </div>
 
                 <div class="hospedador-foto"
-                    style="background: url({{detalhes.imagem_2.url}}); background-size: cover;">
+                    style="background: url({{detalhes_hosped.imagem.url}}); background-size: cover;">
                 </div>
             </div>
 
             <div class="preco-hotel-centro">
                 <div class="preco-hotel">
-                    <h2>R$ 1869/noite</h2>
-                    <p>Texa de Limpeza: R$ 90</p>
-                    <p>Taxa de Serviço: R$ 300</p>
+                    <h2>R$ {{detalhes.preco}}/{{detalhes.preco_por}}</h2>
+                    <p>Taxa de Limpeza: R$ {{detalhes.taxa_limpeza}}</p>
+                    <p>Taxa de Serviço: R$ 50</p>
                     <button class="botao-reserva">Reservar</button>
                 </div>
 
-                <div>
-                    <h4>Vista</h4>
-                    <ul>
-                        <li>Vista para a praia</li>
-                        <li>Vista para a cidade</li>
-                    </ul>
-
-                    <h4>Internet e Escritório</h4>
-                    <ul>
-                        <li>Wifi</li>
-                    </ul>
-
-                    <h4>Banheiro</h4>
-                    <ul>
-                        <li>Shampoo e Condicionador</li>
-                        <li>Toalhas</li>
-                        <li>Secador</li>
-                    </ul>
+                <div><!--pegar do banco-->
+                    {% comment %} {% for recurso in detalhes_recursos %} {% endcomment %}
+                        <h4>{{detalhes_recursos.nome_recurso}}</h4>
+                        <ul>
+                            <li>{{detalhes_recursos.lista_recurso.titulo_recurso}}</li><!--pegar do banco-->
+                        </ul>
+                    {% comment %} {% endfor %} {% endcomment %}
                 </div>
             </div>
 

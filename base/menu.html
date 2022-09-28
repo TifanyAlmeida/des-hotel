@@ -1,11 +1,10 @@
 {% load static %}
 {% include 'headerMenu.html' %}
 <nav>
-    <a class="nav-titulo" href="#">des hotel</a>
+    <a class="nav-titulo" href="{% url 'home' %}">des hotel</a>
     <ul class="nav-lista">
         <li><a id="nav-texto" href="{% url 'home' %}">Home</a></li>
-        <li><a id="nav-texto" href="#">Contato</a></li>
-        <li><a id="nav-texto" href="#">Sobre</a></li>
+        <li><a id="nav-texto" href="#contato-link">Contato</a></li>
     </ul>
 </nav>
 
