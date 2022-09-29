@@ -2,7 +2,8 @@ ta quase lá
 
 
 -falta puxar a lista de recursos do banco de dados.
--arrumar um local para coloar o endereço
+-arrumar um local para coloar o endereço**
+usar box shadow e nçao background no hover da home com os cards
 
 
 o restante está okk
